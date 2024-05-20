@@ -1,0 +1,31 @@
+* {
+    font-family: Montserrat;        
+}
+  /* Додаємо стилі для зірочок */
+.hidden-text {
+    visibility: hidden;
+}
+.hidden-text::after {
+    content: "******";
+    visibility: visible;
+}
+.taskTitle {
+    font-size: 20px;
+    font-weight: bold;
+}
+#place {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    margin-top: 20px;
+}
+#boxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+.box {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
